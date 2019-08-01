@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<connector-plugin class='qubole_odbc' superclass='presto' plugin-version='0.0.0' name='Qubole Presto' version='10.01.1031'>
+  <connection-customization class="qubole_odbc" enabled="true" version="10.0">
+    <vendor name="Qubole"/>
+    <driver name="QuboleODBC"/>
+    <customizations>
+    </customizations>
+  </connection-customization>
+  <connection-dialog file='connection-dialog.tcd'/>
+  <connection-resolver file="connectionResolver.tdr"/>
+</connector-plugin>
