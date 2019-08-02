@@ -23,6 +23,12 @@
     // use_s3 feature enabled in odbc-2.0.0
     params["USE_S3"] = "true";
 
+    // Enabling PATH-STYLE-URLS(bucket name with `.` in it) 
+    // when we have bucket region as input.
+    if (server.length == 2 && server[1] != "") {
+        params["VIRTUAL_HOST_STYLE"] = "false";
+    };
+
     var stream  = attr["IsolationLevel"];
 
     if (stream == "ReadUncommitted") {
