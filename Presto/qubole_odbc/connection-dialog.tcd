@@ -1,15 +1,12 @@
 <connection-dialog class='qubole_odbc'>
   <connection-config>
-    <authentication-mode value='None' />
+    <authentication-mode value='PasswordOnly' />
     <authentication-options>        
-      <option name="None" default="true" value="auth-none" />
+      <option name="Password" default="true" value="api-token" />
     </authentication-options>
-    <db-name-prompt value="Catalog :" />
-    <has-databases value="true" />
+    <db-name-prompt value="@string/db_name_prompt/" />
     <has-schemas value="true" />
-    <server-prompt value="End Point;Bucket Region : " default="https://api.qubole.com;us-east-1"/>     
-    <service-prompt value="API Token : " />
-    <show-uncommitted-data-checkbox value="true" />
-    <warehouse-prompt value="Cluster Label :" default="presto" />
+    <server-prompt value="@string/server_prompt/" default="https://api.qubole.com;us-east-1"/>     
+    <warehouse-prompt value="@string/warehouse_prompt/" default="presto" />
   </connection-config>
 </connection-dialog>
