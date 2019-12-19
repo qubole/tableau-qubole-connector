@@ -1,0 +1,13 @@
+<connection-dialog class='qubole_hive'>
+  <connection-config>
+    <authentication-mode value='None' />
+    <authentication-options>
+      <option name="None" default="true" value="auth-none" />
+    </authentication-options>
+    <has-databases value="false" />
+    <has-schemas value="true" />
+    <server-prompt value="EndPoint : " default="https://api.qubole.com"/>
+    <service-prompt value="API Token : " />
+    <warehouse-prompt value="Cluster Label :" default="hadoop2"/>
+  </connection-config>
+</connection-dialog>
