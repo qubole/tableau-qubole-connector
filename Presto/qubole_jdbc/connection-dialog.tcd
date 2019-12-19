@@ -1,0 +1,15 @@
+<connection-dialog class='qubole_jdbc'>
+  <connection-config>
+    <authentication-mode value='None' />
+    <authentication-options>
+      <option name="None" default="true" value="auth-none" />
+    </authentication-options>
+    <db-name-prompt value="Catalog :" />
+    <has-databases value="true" />
+    <has-schemas value="true" />
+    <server-prompt value="EndPoint : " default="https://api.qubole.com"/>
+    <service-prompt value="API Token : " />
+    <show-uncommitted-data-checkbox value="true"/>
+    <warehouse-prompt value="Cluster Label :" default="presto"/>
+  </connection-config>
+</connection-dialog>
