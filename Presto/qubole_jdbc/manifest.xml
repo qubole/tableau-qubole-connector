@@ -1,10 +1,14 @@
 <?xml version='1.0' encoding='utf-8' ?>
 <connector-plugin class='qubole_jdbc' superclass='jdbc' plugin-version='1.0' name='Qubole Presto (JDBC)' version='18.1'>
+  <vendor-information>
+    <company name="Qubole"/>
+    <support-link url="https://www.qubole.com/services-support/technical-support"/>
+  </vendor-information>
   <connection-customization class="qubole_jdbc" enabled="true" version="10.0">
     <vendor name="Qubole"/>
     <driver name="QuboleJDBC"/>
     <customizations>
-	  <customization name="CAP_SELECT_INTO" value="no"/>
+      <customization name="CAP_SELECT_INTO" value="no"/>
       <customization name="CAP_SELECT_TOP_INTO" value="no"/>
       <customization name="CAP_CREATE_TEMP_TABLES" value="no"/>
       <customization name="CAP_QUERY_BOOLEXPR_TO_INTEXPR" value="no"/>
@@ -12,14 +16,14 @@
       <customization name="CAP_QUERY_SORT_BY_DEGREE" value="no"/>
       <customization name="CAP_QUERY_SUBQUERIES" value="yes"/>
       <customization name="CAP_QUERY_TOP_N" value="yes"/>
-	  <customization name="CAP_QUERY_TOPSTYLE_LIMIT" value="yes"/>
+      <customization name="CAP_QUERY_TOPSTYLE_LIMIT" value="yes"/>
       <customization name="CAP_QUERY_WHERE_FALSE_METADATA" value="yes"/>
       <customization name="CAP_QUERY_SUBQUERIES_WITH_TOP" value="yes"/>
       <customization name="CAP_SUPPORTS_SPLIT_FROM_LEFT" value="yes"/>
       <customization name="CAP_SUPPORTS_SPLIT_FROM_RIGHT" value="yes"/>
       <customization name="CAP_SUPPORTS_UNION" value="yes"/>
       <customization name="CAP_QUERY_ALLOW_PARTIAL_AGGREGATION" value="no"/>
-	  <customization name="CAP_QUERY_HAVING_REQUIRES_GROUP_BY" value="yes"/>
+      <customization name="CAP_QUERY_HAVING_REQUIRES_GROUP_BY" value="yes"/>
     </customizations>
   </connection-customization>
   <connection-dialog file="connection-dialog.tcd"/>
