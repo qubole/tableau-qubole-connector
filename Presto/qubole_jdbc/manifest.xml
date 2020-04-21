@@ -8,6 +8,11 @@
     <vendor name="Qubole"/>
     <driver name="QuboleJDBC"/>
     <customizations>
+      <customization name="CAP_JDBC_METADATA_READ_PRIMARYKEYS" value="no"/>
+      <customization name="CAP_JDBC_METADATA_READ_FOREIGNKEYS" value="no"/>
+      <customization name="CAP_JDBC_QUERY_ASYNC" value="yes"/>
+      <customization name="CAP_JDBC_QUERY_CANCEL" value="yes"/>
+      <customization name="CAP_FAST_METADATA" value="yes"/>
       <customization name="CAP_SELECT_INTO" value="no"/>
       <customization name="CAP_SELECT_TOP_INTO" value="no"/>
       <customization name="CAP_CREATE_TEMP_TABLES" value="no"/>
