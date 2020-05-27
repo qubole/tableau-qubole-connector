@@ -2,7 +2,6 @@
     var props = {};
 
     props["password"] = attr[connectionHelper.attributePassword];
-	props["catalog_name"] = attr[connectionHelper.attributeDatabase];
 	props["useS3"] = "true";
 	props["skip_parsing"] = "true";
 
