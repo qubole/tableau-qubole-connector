@@ -9,10 +9,15 @@
         <attribute-list>
           <attr>class</attr>
           <attr>server</attr>
-          <attr>service</attr>
+          <attr>dbname</attr>
+          <attr>password</attr>
           <attr>warehouse</attr>
+          <attr>IsolationLevel</attr>
         </attribute-list>
       </required-attributes>
     </connection-normalizer>
+	<connection-properties>
+      <script file='connectionProperties.js'/>
+    </connection-properties>
 	</connection-resolver>
 </tdr>
