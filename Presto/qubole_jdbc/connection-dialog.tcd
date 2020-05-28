@@ -1,0 +1,13 @@
+<connection-dialog class='qubole_odbc'>
+  <connection-config>
+    <authentication-mode value='PasswordOnly' />
+    <authentication-options>        
+      <option name="Password" default="true" value="api-token" />
+    </authentication-options>
+    <db-name-prompt value="@string/db_name_prompt/" />
+    <has-schemas value="true" />
+    <server-prompt value="@string/server_prompt/" default="https://api.qubole.com"/>
+    <show-uncommitted-data-checkbox value="true" />     
+    <warehouse-prompt value="@string/warehouse_prompt/" default="presto" />
+  </connection-config>
+</connection-dialog>

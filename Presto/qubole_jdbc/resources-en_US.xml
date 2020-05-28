@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="qubole_odbc">Qubole Presto</string>
+  <string name="db_name_prompt">Catalog:</string>
+  <string name="server_prompt">End Point:</string>
+  <string name="warehouse_prompt">Cluster Label:</string>
+</resources>

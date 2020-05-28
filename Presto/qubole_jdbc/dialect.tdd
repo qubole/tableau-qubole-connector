@@ -1,0 +1,23 @@
+<dialect name='QubolePresto' base='PrestoDialect' class='qubole_odbc' version='18.1'>
+<function-map>
+  <function group='numeric' name='ATAN2' return-type='real'>
+    <formula>ATAN2(%1,%2)</formula>
+    <argument type='real' />
+    <argument type='real' />
+  </function>
+  <function group='string' name='SPLIT' return-type='str'>
+  <formula>SPLIT(%1,%2)[%3]</formula>
+    <argument type='str' />
+    <argument type='localstr' />
+    <argument type='localint' />
+  </function>
+  <function group='numeric' name='FLOOR' return-type='real'>
+    <formula>FLOOR(%1)</formula>
+    <argument type='real' />
+  </function>
+  <function group='string' name='SPACE' return-type='str'>
+    <formula>(CASE WHEN FLOOR(%1) = 0 THEN &apos;&apos; ELSE LPAD(&apos; &apos;, FLOOR(%1)) END)</formula>
+    <argument type='real' />
+  </function>
+</function-map>
+</dialect>
